@@ -1,0 +1,59 @@
+.appShell {
+  min-height: 100vh;
+  padding: 32px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    radial-gradient(circle at top, rgba(94, 234, 212, 0.22), transparent 34%),
+    linear-gradient(135deg, #0f172a 0%, #111827 45%, #1f2937 100%);
+}
+
+.todoCard {
+  width: min(100%, 760px);
+  padding: 32px;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 28px;
+  background: rgba(15, 23, 42, 0.82);
+  box-shadow: 0 24px 80px rgba(15, 23, 42, 0.45);
+  backdrop-filter: blur(18px);
+}
+
+.hero {
+  margin-bottom: 28px;
+
+  h1 {
+    margin: 0;
+    font-size: clamp(2.2rem, 5vw, 3.6rem);
+    line-height: 1;
+    color: #f8fafc;
+  }
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #5eead4;
+}
+
+.subtitle {
+  max-width: 48ch;
+  margin: 12px 0 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #cbd5e1;
+}
+
+@media (max-width: 640px) {
+  .appShell {
+    padding: 20px 12px;
+  }
+
+  .todoCard {
+    padding: 24px 18px;
+    border-radius: 22px;
+  }
+}

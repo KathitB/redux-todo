@@ -1,19 +1,22 @@
-import { useState } from "react";
-
-import "./App.css";
+import "./App.scss";
 import Addtodo from "./components/Addtodo";
-import Todo from "./components/Todo";
 import Todo from "./components/Todo";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <h1>learn redux</h1>
-      <Addtodo />
-      <Todo />
-    </>
+    <main className="appShell">
+      <section className="todoCard">
+        <div className="hero">
+          <p className="eyebrow">Redux Toolkit Practice</p>
+          <h1>Learn Redux</h1>
+          <p className="subtitle">
+            Add, review, and remove your tasks from one tidy workspace.
+          </p>
+        </div>
+        <Addtodo />
+        <Todo />
+      </section>
+    </main>
   );
 }
 
